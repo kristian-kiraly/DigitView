@@ -14,6 +14,14 @@ public struct DigitView: View {
     public var gapPercentage:Double = 0.1
     public var thicknessPercentage:Double = 0.2
     
+    public init(digit: Character, color: Color, offColor: Color, gapPercentage: Double = 0.1, thicknessPercentage: Double = 0.2) {
+        self.digit = digit
+        self.color = color
+        self.offColor = offColor
+        self.gapPercentage = gapPercentage
+        self.thicknessPercentage = thicknessPercentage
+    }
+    
     public var body: some View {
         GeometryReader { geo in
             DigitBar() //top
@@ -130,8 +138,8 @@ public struct DigitView: View {
 }
 
 
-public struct DigitBar: Shape {
-    public func path(in rect: CGRect) -> Path {
+fileprivate struct DigitBar: Shape {
+    func path(in rect: CGRect) -> Path {
         var path = Path()
         
         let taller = rect.size.height > rect.size.width
