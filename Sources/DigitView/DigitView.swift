@@ -130,8 +130,8 @@ public struct DigitView: View {
 }
 
 
-fileprivate struct DigitBar: Shape {
-    func path(in rect: CGRect) -> Path {
+public struct DigitBar: Shape {
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         
         let taller = rect.size.height > rect.size.width
