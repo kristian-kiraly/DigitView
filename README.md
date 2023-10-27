@@ -13,3 +13,5 @@ struct ContentView: View {
     }
 }
 ```
+
+![alt text](https://github.com/kristian-kiraly/DigitView/blob/main/Example.png?raw=true)
