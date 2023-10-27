@@ -7,8 +7,8 @@ DigitView Usage:
 struct ContentView: View {
     var body: some View {
         HStack {
-            DigitView(digit: "-", color: .red, offColor: .red.opacity(0.2))
             DigitView(digit: "2", color: .red, offColor: .red.opacity(0.2))
+            DigitView(digit: "5", color: .red, offColor: .red.opacity(0.2))
         }
     }
 }
